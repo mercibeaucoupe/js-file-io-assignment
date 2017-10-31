@@ -7,7 +7,7 @@ const { Employee } = require('./Employee')
 const employee =
   Employee
     .parseFromFilePath(
-      path.resolve(__dirname, 'employee.json')
+      path.resolve(__dirname, '..', 'employee.json')
     )
 
 console.log(`is Employee? ${employee instanceof Employee}`)
